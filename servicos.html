@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="cabecalho__menu-hamburgue" id="botao"></div>
+
+            <img src="./assets/img/logo-branco.png" alt="" class="cabecalho__menu-logo">
+            <nav class="menu__navegacao " id="menu-lateral">
+                <ul class="menu__lista">
+                    <li class="lista__itens">
+                        <a href="index.html" class="lista__itens-link">Home</a>
+                    </li>
+                    <li class="lista__itens">
+                        <a style="color: aqua; font-style: italic;" href="#" class="lista__itens-link">Serviços</a>
+                    </li>
+                    <li class="lista__itens">
+                        <a href="contato.html" class="lista__itens-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu__navegacao-desktop">
+                <ul class="menu__lista-desk">
+                    <li class="lista__itens-desk">
+                        <a href="index.html" class="lista__itens-link">Home</a>
+                    </li>
+                    <li class="lista__itens-desk">
+                        <a style="color: aqua; font-style: italic;" href="#" class="lista__itens-link">Serviços</a>
+                    </li>
+                    <li class="lista__itens-desk">
+                        <a href="contato.html" class="lista__itens-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo__principal">
+         <section class="servicos">
+            <ul class="lista__servicos">
+                <li class="itens__servicos">
+                <h2 class="titulo__principal">Cabelo</h2>
+                    <img src="./assets/img/cabelo.jpg" alt="" class="imagem__servicos">
+                    <p class="descricao__servicos">Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="descricao__preco">R$ 25,00</p>
+                </li>
+                <li class="itens__servicos">
+                <h2 class="titulo__principal">Barba</h2>
+                    <img src="./assets/img/barba.jpg" alt="" class="imagem__servicos">
+                    <p class="descricao__servicos">Corte e desenho profissional de barba</p>
+                    <p class="descricao__preco">R$ 18,00</p>
+                </li>
+                <li class="itens__servicos">
+                <h2 class="titulo__principal">Cabelo + barba</h2>
+                    <img src="./assets/img/cabelo+barba.jpg" alt="" class="imagem__servicos">
+                    <p class="descricao__servicos">Pacote completo de cabelo e barba</p>
+                    <p class="descricao__preco">R$ 35,00</p>
+                </li>
+            </ul>
+         </section>    
+    </main>
+
+    <footer class="rodape">
+        <img src="./assets/img/logo-branco.png" alt="" class="imagem__rodape">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2022 </p>
+        <p class="rodape__direitos">Todos os direitos reservados</p>
+    </footer>
+   
+    <script src="./assets/function.js"></script>
+</body>
+</html>

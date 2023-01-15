@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="cabecalho__menu-hamburgue" id="botao"></div>
+
+            <img src="./assets/img/logo-branco.png" alt="" class="cabecalho__menu-logo">
+            <nav class="menu__navegacao " id="menu-lateral">
+                <ul class="menu__lista">
+                    <li class="lista__itens">
+                        <a href="index.html" class="lista__itens-link">Home</a>
+                    </li>
+                    <li class="lista__itens">
+                        <a href="servicos.html" class="lista__itens-link">Serviços</a>
+                    </li>
+                    <li class="lista__itens">
+                        <a style="color: aqua; font-style: italic;" href="contato.html" class="lista__itens-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu__navegacao-desktop">
+                <ul class="menu__lista-desk">
+                    <li class="lista__itens-desk">
+                        <a href="index.html" class="lista__itens-link">Home</a>
+                    </li>
+                    <li class="lista__itens-desk">
+                        <a href="s4" class="lista__itens-link">Serviços</a>
+                    </li>
+                    <li class="lista__itens-desk">
+                        <a style="color: aqua; font-style: italic;" href="#" class="lista__itens-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+    <main class="conteudo__principal align">
+        <form action="" class="formulario">
+            <label class="titulo" for="nomesobrenome">Nome e Sobrenome</label>
+            <input class="input__padrao" type="text" id="nomesobrenome" placeholder="Nome Sobrenome" required>
+
+            <label class="titulo" for="email">Email</label>
+            <input class="input__padrao" type="email" id="email" placeholder="nome@gmail.com" required>
+
+            <label class="titulo" for="telefone">Telefone</label>
+            <input class="input__padrao" type="tel" id="telefone" placeholder="91 9 9999-9999">
+
+            <label class="titulo" for="mensagem">Mensagem</label>
+            <textarea class="input__padrao" name="" id="mensagem" cols="30" rows="10"></textarea>
+
+        <fieldset>
+            <legend class="preferencia__contato">Como prefere nosso contato</legend>
+            <label class="titulo" for="radio-email">
+                <input type="radio" name="contato" value="email" id="radio-email">
+                Email
+            </label>
+            <label class="titulo" for="radio-telefone">
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                Telefone
+            </label>
+            <label class="titulo" for="radio-whatsapp">
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                whatsapp
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="preferencia__horario">Qual horário prefere ser atendido</legend>
+            <select class="selecao" name="" id="">
+                <option class="opcao" value="Manhã">Manhã</option>
+                <option class="opcao" value="Tarde">Tarde</option>
+                <option class="opcao" value="Noite">Noite</option>
+            </select>
+
+            <label class="checkbox" for="">
+                <input type="checkbox" checked>
+                Gostaria de receber nossas novidades por email?
+            </label>
+        </fieldset>
+        <input class="enviar" type="submit" value="Enviar">
+    </form>
+
+    <table class="tabela">
+        <thead class="cabecalho__tabela">
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+        </thead>
+        <tbody class="corpo__tabela" >
+            <tr>
+                <td>Segunda</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h - 20h</td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <footer class="rodape">
+        <img src="./assets/img/logo-branco.png" alt="" class="imagem__rodape">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2022 </p>
+        <p class="rodape__direitos">Todos os direitos reservados</p>
+    </footer>
+    <script src="./assets/function.js"></script>
+</body>
+</html>

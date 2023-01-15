@@ -1,0 +1,338 @@
+@import url("header.css");
+
+:root{
+        --cor-fonte-principal: #fff;
+        --cor-de-fundo: linear-gradient(to right top, #051937, #031b40, #041d49, #071e52, #0e1f5b);
+        --tamanho-da-section: 70vw;
+        --fonte-principal: 'Oswald, sans-serif';
+        --cor-de-fundo-link:linear-gradient( #5f33b7, #3d259c, #4541b9, #293baf);
+        --transicao-cor:linear-gradient(to right bottom, #051937, #001f4b, #0a3881, #031a54, #05137d);
+    }
+
+body{
+    background: var(--cor-de-fundo);
+    color: var(--cor-fonte-principal);
+    height: auto;
+    font-family: var(--fonte-principal);
+}
+
+
+.banner{
+    padding: 1%;
+}
+
+.banner__imagem{
+    width: 100%;
+}
+
+.conteudo__principal{
+    padding: 0 2%;
+}
+
+.principal{
+    padding: 0 2%;
+    background: var(--transicao-cor);
+}
+
+.titulo__principal{
+    text-align: center;
+    margin: 1.3em 0;
+    text-transform: uppercase;
+    clear: left;
+    font-weight: 700;
+}
+
+.descricao__principal,.descricao__missao, .descricao__secundario{
+    text-align: justify;
+    margin: 0.5em 0;
+    line-height: 1.2em;
+    font-size: 1.3em;
+}
+
+.utensilhos{
+     max-width: 20%;
+     width: 100%;
+     float: left;
+     padding-right: 2%;
+}
+
+.mapa{
+    padding: 0 2%;
+}
+
+.mapa__conteudo{
+    margin: 1em 0;
+
+}
+
+.dimensao__mapa{
+    height: 250px;
+}
+
+.conteudo__beneficios{
+    padding:  2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 0.6em;
+    margin: 1em 0;    
+}
+
+
+.itens{
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.itens::before{
+    content: "★";
+    color: yellow;
+    margin: 0 0.4em;
+}
+
+.imagem__beneficios{
+    width: 100%;
+    max-width: 80%;
+}
+
+.video{
+    padding: 0 2%;
+    margin: 1em 0;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    gap: 1em 0 ;
+}
+
+.imagem__rodape{
+    width: 150px;
+    height: 150px;
+}
+
+.copyright,
+.rodape__direitos{
+    font-size: 1.3em;
+}
+
+/* css página servicos */
+
+.servicos{
+    margin: 1em auto;
+    padding: 0 2%;
+}
+
+.lista__servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.itens__servicos{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #6615e0;
+    margin: 1em 0;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 50px;
+}
+
+.itens__servicos:hover{
+    background:linear-gradient(blue, #200460);
+    border-radius: 20px;
+    border: 5px solid #660aef;
+    color: #00ffff;
+    font-size: 1.4em;
+
+}
+
+.descricao__servicos,
+.descricao__preco{
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+/*Css pagina contatos  */
+
+.align{
+    padding: 0 4%;
+    margin: 2em 0;
+   
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #ccc;
+    padding: 1em 0.6em;
+}
+
+.titulo{
+    display: block;
+    font-size: 1.3em;
+}
+
+.preferencia__contato,
+.preferencia__horario{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+
+.input__padrao{
+    width: var(--tamanho-da-section);
+    padding: 0.6em;
+    display: block;
+    background-color: #4921b6;
+    font-size: 1.3em;
+    color: aqua;
+}
+
+.input__padrao::placeholder{
+    color: #cccccc;
+}
+
+.selecao{
+    display: block;
+    margin: 1em auto;
+    padding: 0.4em;
+    font-size: 1.2em;
+    background-color: #4921b6;
+    color: #cccccc;
+}
+
+.checkbox{
+   font-size: 1.2em;
+}
+
+.enviar{
+    padding: 0.3em 0.6em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background-color: #4921b6;
+    color: #cccccc;
+}
+
+.tabela{
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1.3em;
+    border: 2px solid #ccc;
+
+}
+
+.cabecalho__tabela{
+    background-color: #4921b6;
+    margin: 11em;
+}
+
+tr{
+  border-bottom: 2px solid #ccc;
+}
+
+th,td{
+    padding: 0.5em 0;
+}
+
+
+
+
+
+@media screen and (min-width:700px){
+
+    .descricao__principal-mapa{
+        text-align: center;
+    }
+
+   .lista__servicos{
+       width: 70%;
+       margin: 0 auto;
+   }
+}
+
+@media screen and (min-width:928px){
+   
+    .titulo__principal,
+    .descricao__principal,
+    .descricao__missao, 
+    .descricao__secundario,
+    .itens{
+        font-size: 1.5em;
+    }
+
+    .dimensao__mapa,
+    .dimensao__video{
+        height: 350px;
+    }
+
+    .banner__imagem{
+      max-height: 50vh;
+    }
+    .beneficios,
+    .mapa
+    {
+        width: var(--tamanho-da-section);
+        margin: 0 auto;
+    }
+
+    .imagem__beneficios{
+        width: 50%;
+    }
+
+     .lista__servicos{
+       flex-direction: row;
+       justify-content: center;
+       padding: 0 4%;
+       gap:1.3em;
+    } 
+
+    .itens__servicos{
+        padding: 0 1em;
+    }
+
+    .formulario{
+        width: 60vw;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+
+    .checkbox{
+        font-size: 1.2em;
+    }
+
+    .input__padrao{
+        width: 50vw;
+    }
+
+    .tabela{
+        width: 62vw;
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .input__padrao{
+        width: 40vw;
+    }
+
+    .formulario{
+        width: 50vw;
+    }
+
+    .tabela{
+        width: 52vw;
+    }
+
+    .lista__servicos{
+        gap: 2em;
+    }
+}
